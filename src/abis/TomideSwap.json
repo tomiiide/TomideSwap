@@ -1,0 +1,216 @@
+{
+  "contractName": "TomideSwap",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/tomiiide/Lab/eth_swap/src/contracts/TomideSwap.sol\":\"TomideSwap\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/tomiiide/Lab/eth_swap/src/contracts/TomideSwap.sol\":{\"keccak256\":\"0xf473d7936c7075981f7b67f8ea9e8c7b135e68627d6d7a5f5ada40e89cece748\",\"urls\":[\"bzz-raw://779a4534eecd4ef045d60cbb3147487cb01bdb38eacd42503b102067f909cc42\",\"dweb:/ipfs/QmctkEbhYLeQX4ifxJUDf8kyU426tPPKRobK3mjkpfnRJY\"]}},\"version\":1}",
+  "bytecode": "0x608060405260405180606001604052806029815260200161027f6029913960009080519060200190610032929190610045565b5034801561003f57600080fd5b506100ea565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061008657805160ff19168380011785556100b4565b828001600101855582156100b4579182015b828111156100b3578251825591602001919060010190610098565b5b5090506100c191906100c5565b5090565b6100e791905b808211156100e35760008160009055506001016100cb565b5090565b90565b610186806100f96000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806306fdde0314610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050508156fea265627a7a723158205b1f0261396fa02c1240c100b33b90b34ebcfd86be2b37818dc89a60d548c35464736f6c63430005100032546f6d6964655377617020496e7374616e7420446563656e7472616c697a65642045786368616e6765",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c806306fdde0314610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050508156fea265627a7a723158205b1f0261396fa02c1240c100b33b90b34ebcfd86be2b37818dc89a60d548c35464736f6c63430005100032",
+  "sourceMap": "26:93:2:-;;;52:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;26:93;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:93:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "26:93:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:93:2;;;;;;;;;;;;;;;;;;;52:64;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;52:64:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.16;\n\ncontract TomideSwap {\n    string public name = \"TomideSwap Instant Decentralized Exchange\";\n}",
+  "sourcePath": "/Users/tomiiide/Lab/eth_swap/src/contracts/TomideSwap.sol",
+  "ast": {
+    "absolutePath": "/Users/tomiiide/Lab/eth_swap/src/contracts/TomideSwap.sol",
+    "exportedSymbols": {
+      "TomideSwap": [
+        252
+      ]
+    },
+    "id": 253,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 248,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 252,
+        "linearizedBaseContracts": [
+          252
+        ],
+        "name": "TomideSwap",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 251,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 252,
+            "src": "52:64:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 249,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "52:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "546f6d6964655377617020496e7374616e7420446563656e7472616c697a65642045786368616e6765",
+              "id": 250,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "73:43:2",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_e0dec3f3f4ce8055154bf1bf62ba57c49b888059e1572b1ce743d4f4cffe3db7",
+                "typeString": "literal_string \"TomideSwap Instant Decentralized Exchange\""
+              },
+              "value": "TomideSwap Instant Decentralized Exchange"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 253,
+        "src": "26:93:2"
+      }
+    ],
+    "src": "0:119:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/tomiiide/Lab/eth_swap/src/contracts/TomideSwap.sol",
+    "exportedSymbols": {
+      "TomideSwap": [
+        252
+      ]
+    },
+    "id": 253,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 248,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 252,
+        "linearizedBaseContracts": [
+          252
+        ],
+        "name": "TomideSwap",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 251,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 252,
+            "src": "52:64:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 249,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "52:6:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "546f6d6964655377617020496e7374616e7420446563656e7472616c697a65642045786368616e6765",
+              "id": 250,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "73:43:2",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_e0dec3f3f4ce8055154bf1bf62ba57c49b888059e1572b1ce743d4f4cffe3db7",
+                "typeString": "literal_string \"TomideSwap Instant Decentralized Exchange\""
+              },
+              "value": "TomideSwap Instant Decentralized Exchange"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 253,
+        "src": "26:93:2"
+      }
+    ],
+    "src": "0:119:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x3Fc7dA16eF549d4b0B7Aeb9dF6620b6E213c2C37",
+      "transactionHash": "0x323c8501a34fca9e9bc88ec13bec58598836d837d666ca5289c6ab019434eeb0"
+    }
+  },
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-04-02T04:40:09.807Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
