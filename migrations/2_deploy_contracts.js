@@ -10,7 +10,7 @@ module.exports = async function(deployer){
     const token = await Token.deployed();
 
     // deploy swap contract
-    await deployer.deploy(TomideSwap);
+    await deployer.deploy(TomideSwap, token.address);
     const tomideSwap = await TomideSwap.deployed();
 
     //transfer all tokens to TomideSwap address
