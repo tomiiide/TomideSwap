@@ -3,7 +3,7 @@ The best motherfucking crypto swapping app you ever used in your motherfucking l
 
 
 # shit I used to build it.
-1. [Dapp University's motherfuckers tutorial]('https://www.youtube.com/watch?v=99pYGpTWcXM&t=2998s').
-2. React - [Download it here]
+1. [Dapp University's motherfuckers tutorial](https://www.youtube.com/watch?v=99pYGpTWcXM&t=2998s).
+2. [React](https://reactjs.org/docs/create-a-new-react-app.html)
 3. Truffle -  [Download it here](https://www.trufflesuite.com/)
 4. Ganache - [Download it here](https://www.trufflesuite.com/ganache)
