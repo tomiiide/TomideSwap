@@ -1,11 +1,25 @@
 pragma solidity ^0.5.16;
 
-import "./Token.sol";
+import "./TomiCoin.sol";
 
 contract TomideSwap {
     string public name = "TomideSwap Instant Decentralized Exchange";
     DappToken public token;
     uint public rate = 100;
+
+    event TokensPurchased(
+        address account,
+        address token,
+        uint amount,
+        uint rate
+    );
+    
+    event TokensSold(
+        address account,
+        address token,
+        uint amount,
+        uint rate
+    );
 
     constructor(DappToken _token) public {
         token = _token;
@@ -22,17 +36,25 @@ contract TomideSwap {
         token.transfer(msg.sender, tokenAmount);
 
         // Emit an event
-        emit TokenPurchased(msg.sender, address(token), tokenAmount, rate);
+        emit TokensPurchased(msg.sender, address(token), tokenAmount, rate);
     }
 
-    function sellTokens(unit _amount) public payable {
+    function sellTokens(uint _amount) public {
+
+        // require that TomideSwap has enough ether for the sale
+        require(token.balanceOf(address(this)) >= _amount);
+
         //calculate the amount of tokens to buy
-        unit etherAmount = amount / rate;
-        
-        require(token.balanceOf(address(msg.sender)) >= tokenAmount );
+        uint etherAmount = _amount / rate;
 
-        msg.sender.transfer(this, tokenAmount);
-
+        // require that user has enough ether to sell
+        require(address(this).balance >= etherAmount);
         
+        // perform sale
+        token.transferFrom(msg.sender, address(this), _amount);
+        msg.sender.transfer(etherAmount);
+
+        //emit an event
+        emit TokensSold(msg.sender, address(token), _amount, rate);
     }
 }
